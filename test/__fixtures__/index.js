@@ -7,4 +7,11 @@ var a = css`
 
   ${theme('bar')}
   ${theme2('bar')}
+
+  ${() => 'display: block;'}
+
+
+  ${function() {
+    return 'display: block;';
+  }}
 `;

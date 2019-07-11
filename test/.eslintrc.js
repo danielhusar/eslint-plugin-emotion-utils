@@ -4,6 +4,7 @@ module.exports = {
   },
   plugins: ['eslint-plugin-emotion-utils'],
   rules: {
-    'eslint-plugin-emotion-utils/no-function-call': [2, { fn: ['theme'] }],
+    'emotion-utils/no-function-call-inside-css': [2, [{ name: 'theme' }]],
+    'emotion-utils/no-function-declarations-inside-css': [2],
   },
 };
