@@ -1,0 +1,10 @@
+{
+  "name": "test",
+  "private": true,
+  "version": "1.0.0",
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "eslint-plugin-emotion-utils": "*"
+  },
+  "license": "MIT"
+}

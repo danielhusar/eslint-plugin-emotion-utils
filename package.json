@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "workspaces": ["eslint-plugin-emotion-utils", "test"],
+  "scripts": {
+    "test": "yarn workspace test eslint __fixtures__"
+  }
+}
