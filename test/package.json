@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "devDependencies": {
     "eslint": "^6.0.1",
-    "eslint-plugin-emotion-utils": "*"
+    "eslint-plugin-emotion-utils": "*",
+    "jest": "^24.8.0"
   },
   "license": "MIT"
 }
