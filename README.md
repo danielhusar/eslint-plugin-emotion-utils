@@ -1,5 +1,5 @@
 # eslint-plugin-emotion-utils [![Build Status](https://travis-ci.org/danielhusar/eslint-plugin-emotion-utils.svg?branch=master)](https://travis-ci.org/danielhusar/eslint-plugin-emotion-utils)
-> Emotion eslint plugin helpful util
+> Emotion eslint plugin helpful utils
 
 ## Install
 
@@ -13,12 +13,12 @@ npm install --dev eslint-plugin-emotion-utils
 
 ## Usage
 
-`..eslintrc.js`
+`.eslintrc.js`
 
 ```js
 plugins: ['eslint-plugin-emotion-utils'],
 rules: {
-  'emotion-utils/no-function-declarations-inside-css': [2, { message: 'My custom error message' }],
+  'emotion-utils/no-function-declaration-inside-css': [2, { message: 'My custom error message' }],
   'emotion-utils/no-function-call-inside-css': [2, [{ name: 'theme', message: 'My custom message' }]],
 },
 ```
