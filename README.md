@@ -1,7 +1,7 @@
 # eslint-plugin-emotion-utils [![Build Status](https://travis-ci.org/danielhusar/eslint-plugin-emotion-utils.svg?branch=master)](https://travis-ci.org/danielhusar/eslint-plugin-emotion-utils)
 > Emotion eslint plugin helpful utils. See the [rules](#rules) section for all available rules.
 
-> **Caveat:** This plugin doesn't check where the `css` or `cx` functions are defined so it's possible you get some false positives.
+> **Caveat:** This plugin doesn't check where the `css` function is defined so it's possible you get some false positives.
 
 ## Install
 
