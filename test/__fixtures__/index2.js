@@ -1,6 +1,6 @@
 const css = () => null;
 let theme = () => () => 'foo';
 
-var a = css`
+css`
   ${theme.bar}
 `;

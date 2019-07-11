@@ -1,8 +1,9 @@
 const css = () => null;
+const cx = () => null;
 let theme = () => () => 'foo';
 let theme2 = () => () => 'foo';
 
-var a = css`
+css`
   color: black;
 
   ${theme('bar')}

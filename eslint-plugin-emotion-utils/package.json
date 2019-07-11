@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Emotion eslint plugin helpful utils",
   "main": "eslint/index.js",
+  "scripts": {
+    "prepublish": "cp ../README.md README.md"
+  },
   "devDependencies": {
     "eslint": "^6.0.1"
   },
