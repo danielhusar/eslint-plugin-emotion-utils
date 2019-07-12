@@ -1,5 +1,5 @@
 # eslint-plugin-emotion-utils [![Build Status](https://travis-ci.org/danielhusar/eslint-plugin-emotion-utils.svg?branch=master)](https://travis-ci.org/danielhusar/eslint-plugin-emotion-utils)
-> Emotion eslint plugin helpful utils. See the [rules](#rules) section for all available rules.
+> See the [rules](#rules) section for all available rules.
 
 > **Caveat:** This plugin doesn't check where the `css` function is defined so it's possible you get some false positives.
 
@@ -27,9 +27,17 @@ rules: {
 
 ## Rules
 
-### `emotion-utils/no-function-declarations-inside-css`
+### `emotion-utils/no-function-declaration-inside-css`
 
-> Disables function declarations inside of `css` helper.
+> Forbid inline function declarations inside of `css` helper.
+
+Rule definition:
+
+```js
+'emotion-utils/no-function-declaration-inside-css': [2, { message: 'My custom error message' }],
+```
+
+This is considered a violation:
 
 ```js
 const styles = css`
@@ -43,7 +51,15 @@ const styles = css`
 
 ### `emotion-utils/no-function-call-inside-css`
 
-> Disables function calls inside of `css` helper. Second argument is array of function names to be considered as violation.
+> Forbid function calls inside of `css` helper.
+
+Rule definition:
+
+```js
+'emotion-utils/no-function-call-inside-css': [2, [{ name: 'theme', message: 'My custom error message' }]]
+```
+
+This is considered a violation:
 
 ```js
 const theme = () => ({ theme }) => theme.display;
